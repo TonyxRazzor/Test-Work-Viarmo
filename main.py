@@ -13,7 +13,7 @@ service = build('sheets', 'v4', credentials=credentials)
 sheet = service.spreadsheets()
 
 # ID таблицы Google, с которой будем работать
-spreadsheet_id = 'your_spreadsheet_id'
+spreadsheet_id = '1i_sAdU92HOLhTfI3Z1fSykgUeR6U5ZnbPylHUTJV98E'
 
 # Чтение данных из столбца A таблицы
 result = sheet.values().get(spreadsheetId=spreadsheet_id, range='A:A').execute()
